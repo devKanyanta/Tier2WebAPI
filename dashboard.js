@@ -95,7 +95,7 @@ auth.onAuthStateChanged(async (user) => {
             alert('Error loading user data.');
         }
     } else {
-        window.location.href = 'login.html';
+        window.location.href = 'index.html';
     }
 });
 
@@ -166,7 +166,7 @@ copyApiKeyBtn.addEventListener('click', () => {
 // Logout Function
 logoutBtn.addEventListener('click', () => {
     auth.signOut().then(() => {
-        window.location.href = 'login.html';
+        window.location.href = 'index.html';
     }).catch((error) => {
         console.error('Logout Error:', error);
         alert('Failed to log out.');
